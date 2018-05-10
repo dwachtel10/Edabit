@@ -1,0 +1,12 @@
+//Instructions: Create a function that takes a string as its argument and returns the string in reversed order.
+
+using System;
+public class Program 
+{
+    public static string Reverse(string str) 
+    {
+      char[] chars = str.ToCharArray();
+      Array.Reverse(chars);
+      return string.Join("", chars);
+    }
+}
