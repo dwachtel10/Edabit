@@ -1,0 +1,17 @@
+//Instructions: Create a function that takes two strings and returns true if the first argument ends with the 2nd argument; 
+//otherewise return false.
+
+using System;
+public class Program 
+{
+    public static bool CheckEnding(string str1, string str2) 
+    {
+      int length1 = str1.Length;
+      int length2 = str2.Length;
+      int start = length1 - length2;
+      string lastBit = str1.Substring(start, length2);
+      return (lastBit == str2) ? true : false;
+    }
+}
+
+//this one was a little trickier!  I'm happy I figured it out and got it right on my first try.
