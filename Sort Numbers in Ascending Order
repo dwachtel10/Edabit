@@ -1,0 +1,14 @@
+//Instructions:
+//Create a function that takes an array of numbers and returns a new array, sorted in ascending order (smallest to biggest).
+
+using System;
+using System.Collections;
+using System.Linq;
+public class Program
+    {
+        public static int[] SortNumsAscending(int[] arr)
+        {
+          Array.Sort(arr);
+          return arr;
+        }
+    }
