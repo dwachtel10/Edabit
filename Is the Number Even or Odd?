@@ -1,0 +1,10 @@
+//Instructions: Create a function that takes a number as an argument and returns "even" for even numbers and"odd" for odd numbers.
+
+
+public class Program
+    {
+        public static string IsEvenOrOdd(int num)
+        {
+            return (num % 2 == 0) ? "even" : "odd";
+        }
+    }
