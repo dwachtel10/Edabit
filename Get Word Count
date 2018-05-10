@@ -1,0 +1,14 @@
+//Instructions: Create a function that takes a string and returns the word count.  The string will be a sentence.
+
+using System;
+public class Program
+    {
+        public static int CountWords(string str)
+        {
+          int count = 0;
+            string[] split = str.Split(new char []{' '});
+          foreach (string s in split)
+          	{count++;}
+          return count;
+        }
+    }
