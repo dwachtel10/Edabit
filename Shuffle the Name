@@ -1,0 +1,13 @@
+//Instructions: 
+//Create a function that accepts a string (of a persons first and last name) and returns a string with the first and last name swapped.
+
+using System;
+public class Program
+    {
+        public static string NameShuffle(string str)
+        {
+          string[] array = str.Split(new char[]{' '});
+					Array.Reverse(array);
+          return string.Join(" ", array);
+        }
+    }
