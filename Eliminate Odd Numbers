@@ -1,0 +1,10 @@
+//Instructions
+//Create a function that takes an array of numbers and returns only the even values.
+
+using System;
+using System.Linq;
+public class Program
+    {
+    public static int[] NoOdds(int[] arr) => arr.Where(w => (w % 2 == 0)).ToArray();
+                 
+    }
