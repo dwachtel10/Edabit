@@ -1,0 +1,11 @@
+//Instructions
+//Create a function that takes a string and returns the number (count) of vowels contained within it.
+
+using System;
+using System.Linq;
+public class Program 
+{
+//I thought I was being clever but I could have done this even cleaner
+    public static int CountVowels(string str) =>
+     str.Where(x => (x =='a') || (x== 'e') || ( x== 'i' ) || (x=='o')|| ( x=='u') ).Count();
+}
