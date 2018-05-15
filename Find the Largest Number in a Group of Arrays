@@ -1,0 +1,20 @@
+//Instructions
+//Create a function that takes an array of arrays with numbers. Return a new (single) array with the largest numbers of each.
+
+using System;
+using System.Linq;
+public class Program 
+{
+    public static double[] FindLargest(double[][] values) 
+    {
+      double[] biggest = new double[values.Length];
+      int counter = 0;
+				foreach(double[] array in values)
+        {
+          biggest[counter] = array.Max();
+         Console.WriteLine(array.Max());
+          counter++;
+        }
+      return biggest;
+    }
+}
